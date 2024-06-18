@@ -33,6 +33,6 @@ public class Wallet {
 
     @OneToOne
     @JoinColumn(name = "user_id")
-    private Users users;
+    private User users;
 
 }
