@@ -1,0 +1,19 @@
+spring:
+  application:
+      name: "DiskSync"
+  datasource:
+      url: "${URL_DB}/${DATABASE}"
+      username: ${USERNAME}
+      password: ${PASSWORD}
+      driver-class-name: "org.postgresql.Driver"
+      datasource: ${DATABASE}
+  jpa:
+    hibernate:
+        ddl-auto: "update"
+server:
+  port: ${PORT}
+
+api:
+  security:
+    token:
+      secret: ${JWT_SECRET}

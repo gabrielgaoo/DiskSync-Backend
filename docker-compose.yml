@@ -8,9 +8,9 @@ services:
         - "5432:5432"
        container_name: DiskSyncPostgres
        environment:
-        - POSTGRES_DB=DiskSyncDataBase
-        - POSTGRES_USER=SuperUser
-        - POSTGRES_PASSWORD=1234
+        - POSTGRES_DB=${DATABASE}
+        - POSTGRES_USER=${USERNAME}
+        - POSTGRES_PASSWORD=${PASSWORD}
 
 
 
